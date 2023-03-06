@@ -7,7 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 const Expand: string = 'sm';
-const Title: string = 'Pizza Söder bröder';
+const Title: string = 'Integration Hub';
 
 export function TopNavigationBar() {
     return (
@@ -15,7 +15,7 @@ export function TopNavigationBar() {
             {
                 <Navbar key={Expand} bg="light" expand={Expand} className="mb-3" sticky="top">
                     <Container fluid>
-                        <Navbar.Brand href="#">{Title}</Navbar.Brand>
+                        <Navbar.Brand href="/">{Title}</Navbar.Brand>
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${Expand}`} />
                         <Navbar.Offcanvas
                             id={`offcanvasNavbar-expand-${Expand}`}
@@ -29,17 +29,18 @@ export function TopNavigationBar() {
                             </Offcanvas.Header>
                             <Offcanvas.Body>
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                                    <Nav.Link href="#action1">Checkout</Nav.Link>
-                                    <Nav.Link href="#action2">About Us</Nav.Link>
+                                    <Nav.Link href="integrations">Integrations</Nav.Link>
+                                    <Nav.Link href="transactions">Transactions</Nav.Link>
+                                    <Nav.Link href="about">About</Nav.Link>
                                     <NavDropdown
-                                        title="Locations"
+                                        title="Settings"
                                         id={`offcanvasNavbarDropdown-expand-${Expand}`}
                                     >
-                                        <NavDropdown.Item href="#action3">Södermalm</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action4">Östermalm</NavDropdown.Item>
-                                        <NavDropdown.Item href="#action4">Kungsholmen</NavDropdown.Item>
+                                        <NavDropdown.Item href="account">My Account</NavDropdown.Item>
+                                        <NavDropdown.Item href="notifications">Notifications</NavDropdown.Item>
+                                        <NavDropdown.Item href="integrations">Integrations</NavDropdown.Item>
                                         <NavDropdown.Divider />
-                                        <NavDropdown.Item href="#action5">Sundbyberg (Coming Soon)</NavDropdown.Item>
+                                        <NavDropdown.Item href="loans">Loans (Coming Soon)</NavDropdown.Item>
                                     </NavDropdown>
                                 </Nav>
                                 <Form className="d-flex">
@@ -59,8 +60,8 @@ export function TopNavigationBar() {
 
 
             }
-            
-            
+
+
         </>
     );
 }
