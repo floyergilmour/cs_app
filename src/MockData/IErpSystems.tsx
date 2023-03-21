@@ -1,4 +1,4 @@
-export interface ErpSystems {
+export interface IErpSystems {
     name: string;
     description: string;
     image_source: string;

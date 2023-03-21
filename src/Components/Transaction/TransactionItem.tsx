@@ -1,11 +1,11 @@
 import React from 'react';
 import {Card} from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import {TransactionsMock} from "../../MockData/TransationMockData";
 import {Status} from "../../Enum/Status";
 import {Transaction} from "./Transaction";
 
-const CardStyle: React.CSSProperties = {width: '70rem'}
+const CardStyle: React.CSSProperties = {width: '70%'}
 const CardBodyStyle: React.CSSProperties = {height: '7rem'}
 const CardFooterStyle: React.CSSProperties = {height: '3rem'}
 const CardImageStyle: React.CSSProperties = {height: '200px', width: '100%', objectFit: 'scale-down'}

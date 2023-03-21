@@ -307,3 +307,25 @@ i {
 }
 
 /* this is the end of a tutorial css */
+
+.donnys-center-div {
+  display: flex;
+  width: 100%;
+  max-width: 60%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.test-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+.test-padding {
+  margin: 15px;
+}
+.left-padding {
+  padding-left: 100px;
+}

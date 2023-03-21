@@ -5,28 +5,42 @@ import App from './Pages/App/App';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 import ErrorPage from './Components/ErrorPage/ErrorPage';
-import TransactionItem from "./Components/Transaction/TransactionItem";
-import {Transaction} from "./Components/Transaction/Transaction";
-import {Status} from "./Enum/Status";
-import {TransactionsMock} from "./MockData/TransationMockData";
-import Transactions from "./Pages/Transactions/Transactions";
+import Invoices from "./Pages/Invoices/Invoices";
+import Disputes from "./Pages/Disputes/Disputes";
+import About from "./Pages/About/About";
+import CashFlow from "./Pages/CashFlow/CashFlow";
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "transactions/",
-    element: <Transactions  />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "integrations/",
-    element: <App  />,
-    errorElement: <ErrorPage />,
-  },
+    {
+        path: "/",
+        element: <App/>,
+        errorElement: <ErrorPage/>,
+    },
+    {
+        path: "integrations/",
+        element: <App/>,
+        errorElement: <ErrorPage/>,
+    },
+    {
+        path: "invoices/",
+        element: <Invoices/>,
+        errorElement: <ErrorPage/>,
+    },
+    {
+        path: "disputes/",
+        element: <Disputes/>,
+        errorElement: <ErrorPage/>,
+    },
+    {
+        path: "about/",
+        element: <About/>,
+        errorElement: <ErrorPage/>,
+    },
+    {
+        path: "cashflow/",
+        element: <CashFlow/>,
+        errorElement: <ErrorPage/>,
+    }
 ]);
 
 
@@ -34,9 +48,8 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+        <RouterProvider router={router}/>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
