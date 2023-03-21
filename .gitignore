@@ -29,21 +29,3 @@ node_modules
 
 .idea
 .vscode
-
-
-
-git add .gitignore
-git add package-lock.json
-git add package.json
-git add src/Components/ItemCard/IntegrationCard.tsx
-git add src/Components/TopNavigationBar/TopNavigationBar.tsx
-git add src/Components/Transaction/Transaction.tsx
-git add src/Components/Transaction/TransactionItem.tsx
-git add src/Enum/Status.tsx
-git add src/MockData/ErpSystems.tsx
-git add src/MockData/TransationMockData.tsx
-git add src/Pages/App/App.tsx
-git add src/Pages/Transactions/Transactions.tsx
-git add src/PizzaData.tsx
-git add src/index.css
-git add src/index.tsx

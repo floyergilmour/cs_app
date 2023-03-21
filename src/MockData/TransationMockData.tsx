@@ -6,6 +6,7 @@ import {Status} from "../Enum/Status";
 
 export const TransactionsMock: Transaction[] = [
   new Transaction(
+
       'b66c3886-4349-4c78-b4c5-b6e508e700ea',
       '7f453892-dd1e-4bff-87c5-6a30ad509982',
       100,
