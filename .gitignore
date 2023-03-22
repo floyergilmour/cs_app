@@ -25,7 +25,10 @@ hs_err_pid*
 *.DS_Store
 node_modules/*
 node_modules
+node_modules/.package-lock.json
 
 .vscode
 .idea
+build/
+dist/
 
